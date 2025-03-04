@@ -1,4 +1,4 @@
-#include "Matrix.h"
+#include "matrix.h"
 #include <cmath>
 #include <algorithm>
 #include <stdexcept>
@@ -14,8 +14,8 @@ Matrix::Matrix(const size_t rows, const size_t cols) : m_rows(rows), m_cols(cols
 
 Matrix::Matrix(const std::vector<std::vector<double> > &data)
 {
-    if (m_data.empty() || m_data[0].empty())
-        throw std::invalid_argument("Matrix m_data cannot be empty");
+//    if (m_data.empty() || m_data[0].empty()) <- ругался код на это
+//        throw std::invalid_argument("Matrix m_data cannot be empty");
 
     m_data = data;
     m_rows = data.size();
