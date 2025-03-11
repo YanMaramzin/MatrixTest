@@ -24,5 +24,5 @@ private slots:
     void testTriangular();
     void testRank();
     void testGetSet();
-    void testOperatorOutput(); // устал (
+    void testInverse();
 };
